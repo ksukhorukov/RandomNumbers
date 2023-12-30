@@ -30,12 +30,10 @@ end
 
 def increment_minutes_by(timestamp = '000000', n)
   data = timestamp.split('').map(&:to_i)
-  binding.pry
   increment = ((data[2, 2].join.to_i + n) % 60).to_s
 
   slice_1 = data[0,2].join('')
   slice_2 = data[4,2].join('')
-  binding.pry
   result = slice_1 + padding(increment) + slice_2
 
   return result
@@ -48,6 +46,7 @@ end
 clocks = '000000'
 
 for i in 0...N do
-  # puts increment_hours_by(clocks, 2)
-  puts increment_minutes_by(clocks, 2)
+  clocks = increment_hours_by(clocks, 2)
+  clocks = increment_minutes_by(clocks, 2)
+  puts clocks
 end 
