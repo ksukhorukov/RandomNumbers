@@ -91,6 +91,10 @@ random number: 33
 <br/>
 <h1><a id="manual_random">Methods Of Manual Random Numbers Generation</a></h1>
 
+There are some situations when you cannot use pre-programmed randomizer but you have to generate random number.
+
+For instance you don't have access to your computer and have only pen and a piece of paper. 
+
 # [EOF]
 
 
