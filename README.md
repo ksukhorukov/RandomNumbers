@@ -95,5 +95,24 @@ There are some situations when you cannot use a pre-programmed randomizer but yo
 
 For instance you don't have access to your computer and have only a pen and a piece of paper. 
 
+### Method 1
+
+If you know the current date then write it down on paper, e.g. 31.12.23 
+If you have clocks then write down the exact value that you see on the clocks, e.g. 04:51:45
+
+Concatenate two values: '31' + '12' + '23' + '04' + '51' + '45'
+
+Result is: 311223045145
+
+It will be random number by itself but if you want to get the number in some diapasone then perform modulus division.
+
+For instance if you want to get the random number somewhere between 1 and 33 inclusively then do the following operation
+in order to get it:
+
+311223045145 % 33 = 1
+
+The result will be a random number. In this case it equals to 1.
+
+
 # [EOF]
 
