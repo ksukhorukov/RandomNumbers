@@ -89,7 +89,7 @@ random number: 33
 
 ````
 <br/>
-<h1><a id="manual_random">Methods Of Manual Random Number Generation</a></h1>
+<h1><a id="manual_random">Methods Of Manual Random Numbers Generation</a></h1>
 
 # [EOF]
 
