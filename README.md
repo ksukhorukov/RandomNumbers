@@ -73,7 +73,7 @@ int main() {
 
   long random_number = rand();
 
-  printf("random number: %ld\n", random_number);
+  printf("\nrandom number: %ld\n\n", random_number);
 
   return 0;
 }
@@ -82,11 +82,11 @@ int main() {
 Let's build and run this example:
 
 ````
-user@air RandomNumbers $ make
+user@air RandomNumbers $ make 
 gcc rand.c -o rand
+user@air RandomNumbers $ ./rand
 
-user@air RandomNumbers $ ./rand              
-random number: 1726194239
+random number: 1736648193
 
 ````
 

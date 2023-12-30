@@ -9,7 +9,7 @@ int main() {
 
   long random_number = rand();
 
-  printf("random number: %ld\n", random_number);
+  printf("\nrandom number: %ld\n\n", random_number);
 
   return 0;
 }
