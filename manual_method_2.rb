@@ -3,11 +3,12 @@
 class RandomizedClocks 
   N = 10
 
-  attr_reader :n
+  attr_reader :n, :range
   attr_accessor :clocks
 
-  def initialize(clocks = '000000', n = N)
+  def initialize(clocks = '000000', n = N, range = 100)
     @clocks = clocks 
+    @range = range 
     @n = n
 
     perform
@@ -15,14 +16,19 @@ class RandomizedClocks
 
   def perform
     for i in 0...N do
-      increment_hours_by(clocks, 1)
-      increment_minutes_by(clocks, 3)
-      increment_seconds_by(clocks, 4)
-      puts clocks
+      increment_hours_by(clocks, rand(60))
+      increment_minutes_by(clocks, rand(60))
+      increment_seconds_by(clocks, rand(60))      
     end 
+
+    puts "random number: #{random_number}"
   end 
 
   private 
+
+  def random_number
+    clocks.to_i % range
+  end
 
   def padding(n)
     n = n.to_s.split('')
