@@ -24,7 +24,7 @@ And I want to disclose the nature of random numbers generation today.
 - Attacks On Random Numbers
 - True Random Numbers
 
-<h1><a id="what_is_pseudo_random_number"> What Is Pseudo-Random Number? </a> </h1>
+<h1><a id="what_is_pseudo_random_number">What Is Pseudo-Random Number?</a></h1>
 
 ````
 A pseudorandom number generator is a function that takes a short random seed 
@@ -40,7 +40,7 @@ In other words, the pseudo-random number generator - generates a pseudo-random n
 
 It is not trully random number. But it LOOKS like random number.
 
-<h1><a id="random_ruby"> Generation Of Random Numbers Usungs Ruby Programming Language </a></h1>
+<h1><a id="random_ruby">Generation Of Random Numbers Usungs Ruby Programming Language</a></h1>
 
 Source code: 
 
@@ -58,7 +58,7 @@ user@air RandomNumbers $ ./rand.rb
 82557048399
 ````
 
-<h1><a id="random_с"> Generation Of Random Numbers Using C Programming Language And ANSI99 Standart </a></h1>
+<h1><a id="random_с">Generation Of Random Numbers Using C Programming Language And ANSI99 Standart</a></h1>
 
 ````
 #include <stdlib.h>
