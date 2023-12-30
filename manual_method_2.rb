@@ -10,7 +10,7 @@ def padding(n)
   size = n.size
 
   n = n.join('')
-  binding.pry
+
   return '0' + n if size < 2 
 
   return n
@@ -40,7 +40,11 @@ def increment_minutes_by(timestamp = '000000', n)
 end 
 
 def increment_seconds_by(timestamp = '000000', n)
-
+  data = timestamp.split('').map(&:to_i)
+  increment = ((data[4, 2].join.to_i + n) % 60).to_s
+  slice = data[0,4].join('')
+  result = padding(increment) + slice
+  return result
 end 
 
 clocks = '000000'
@@ -48,5 +52,6 @@ clocks = '000000'
 for i in 0...N do
   clocks = increment_hours_by(clocks, 2)
   clocks = increment_minutes_by(clocks, 2)
+  clocks = increment_seconds_by(clocks, 2)
   puts clocks
 end 
