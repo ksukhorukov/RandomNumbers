@@ -2,11 +2,13 @@
 
 class RandomizedClocks 
   N = 10
+  RANGE = 100
+  CLOCKS_DEFAULT_VALUE = '112233'
 
   attr_reader :n, :range
   attr_accessor :clocks
 
-  def initialize(clocks = '000000', n = N, range = 100)
+  def initialize(clocks = CLOCKS_DEFAULT_VALUE, n = N, range = RANGE)
     @clocks = clocks 
     @range = range 
     @n = n
@@ -63,4 +65,4 @@ class RandomizedClocks
   end 
 end 
 
-RandomizedClocks.new('112233')
+RandomizedClocks.new
