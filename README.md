@@ -25,7 +25,7 @@ And I want to disclose the nature of random numbers generation today.
 - Attacks On Random Numbers
 - True Random Numbers
 
-<a id="what_is_pseudo_random_number"> # What Is Pseudo-Random Number? </a> 
+# <a id="what_is_pseudo_random_number"> What Is Pseudo-Random Number? </a> 
 
 ````
 A pseudorandom number generator is a function that takes a short random seed 
