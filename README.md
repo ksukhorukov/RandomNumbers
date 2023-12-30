@@ -16,13 +16,13 @@ And I want to disclose the nature of random numbers generation today.
 
 # Content
 
-- [What Is Pseudo-Random Number?](#what_is_pseudo_random_number)
-- [Generate Random Numbers Usung Ruby Programming Language](#random_ruby)
-- [Generate Random Numbers Using C Programming Language And ANSI99 Standart](#random_c)
-- Methods Of Manual Random Number Generation 
-- Random Numbers Applications
-- Attacks On Random Numbers
-- True Random Numbers
+ [What Is Pseudo-Random Number?](#what_is_pseudo_random_number)
+ [Generate Random Numbers Usung Ruby Programming Language](#random_ruby)
+ [Generate Random Numbers Using C Programming Language And ANSI99 Standart](#random_c)
+ Methods Of Manual Random Number Generation 
+ Random Numbers Applications
+ Attacks On Random Numbers
+ True Random Numbers
 
 <h1><a id="what_is_pseudo_random_number">What Is Pseudo-Random Number?</a></h1>
 
