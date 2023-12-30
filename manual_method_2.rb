@@ -2,7 +2,7 @@
 
 require 'pry'
 
-N = 1
+N = 10
 
 def padding(n)
   n = n.to_s.split('')
@@ -47,11 +47,11 @@ def increment_seconds_by(timestamp = '000000', n)
   return result
 end 
 
-clocks = '000000'
+clocks = '121355'
 
 for i in 0...N do
-  clocks = increment_hours_by(clocks, 2)
-  clocks = increment_minutes_by(clocks, 2)
-  clocks = increment_seconds_by(clocks, 2)
+  clocks = increment_hours_by(clocks, 1)
+  clocks = increment_minutes_by(clocks, 6)
+  clocks = increment_seconds_by(clocks, 5)
   puts clocks
 end 
