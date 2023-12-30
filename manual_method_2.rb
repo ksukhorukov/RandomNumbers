@@ -1,57 +1,60 @@
 #!/usr/bin/env ruby
 
-require 'pry'
+class RandomizedClocks 
+  N = 10
 
-N = 10
+  attr_reader :n
+  attr_accessor :clocks
 
-def padding(n)
-  n = n.to_s.split('')
+  def initialize(clocks = '000000', n = N)
+    @clocks = clocks 
+    @n = n
 
-  size = n.size
+    perform
+  end 
 
-  n = n.join('')
+  def perform
+    for i in 0...N do
+      increment_hours_by(clocks, 1)
+      increment_minutes_by(clocks, 3)
+      increment_seconds_by(clocks, 4)
+      puts clocks
+    end 
+  end 
 
-  return '0' + n if size < 2 
+  private 
 
-  return n
-end
+  def padding(n)
+    n = n.to_s.split('')
+    size = n.size
+    n = n.join('')
 
-def increment_hours_by(timestamp = '000000', n)
-  data = timestamp.split('').map(&:to_i)
+    return '0' + n if size < 2 
 
-  increment = ((data[0, 2].join.to_i + n) % 60).to_s
+    n
+  end
 
-  slice = data[2,4].join('')
+  def increment_hours_by(timestamp = '000000', n)
+    data = timestamp.split('').map(&:to_i)
+    increment = ((data[0, 2].join.to_i + n) % 60).to_s
+    slice = data[2,4].join('')
+    @clocks = padding(increment) + slice
+  end 
 
-  result = padding(increment) + slice
+  def increment_minutes_by(timestamp = '000000', n)
+    data = timestamp.split('').map(&:to_i)
+    increment = ((data[2, 2].join.to_i + n) % 60).to_s
+    slice_1 = data[0,2].join('')
+    slice_2 = data[4,2].join('')
+    @clocks = slice_1 + padding(increment) + slice_2
+  end 
 
-  return result
+  def increment_seconds_by(timestamp = '000000', n)
+    data = timestamp.split('').map(&:to_i)
+    increment = ((data[4, 2].join.to_i + n) % 60).to_s
+    slice = data[0,4].join('')
+    @clocks = padding(increment) + slice
+  end 
 end 
 
-def increment_minutes_by(timestamp = '000000', n)
-  data = timestamp.split('').map(&:to_i)
-  increment = ((data[2, 2].join.to_i + n) % 60).to_s
-
-  slice_1 = data[0,2].join('')
-  slice_2 = data[4,2].join('')
-  result = slice_1 + padding(increment) + slice_2
-
-  return result
-end 
-
-def increment_seconds_by(timestamp = '000000', n)
-  data = timestamp.split('').map(&:to_i)
-  increment = ((data[4, 2].join.to_i + n) % 60).to_s
-  slice = data[0,4].join('')
-  result = padding(increment) + slice
-  return result
-end 
-
-clocks = '121355'
-
-for i in 0...N do
-  clocks = increment_hours_by(clocks, 1)
-  clocks = increment_minutes_by(clocks, 6)
-  clocks = increment_seconds_by(clocks, 5)
-  puts clocks
-end 
+RandomizedClocks.new('112233')
