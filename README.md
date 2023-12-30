@@ -38,7 +38,7 @@ it should be computationally infeasible to predict the rest of the sequence with
 
 In other words, the pseudo-random number generator - generates pseudo-random numbers.
 
-It is not truly random number. But it LOOKS like random number.
+It is not a truly random number. But it LOOKS like a random number.
 
 <h1><a id="random_ruby">Generation Of Random Numbers Using Ruby Programming Language</a></h1>
 
@@ -104,15 +104,31 @@ Concatenate two values: '31' + '12' + '23' + '04' + '51' + '45'
 
 Result is: 311223045145
 
-It will be random number by itself but if you want to get the number in some diapasone then perform modulus division.
+It will be random number by itself but if you want to get the number in some diapason then perform modulus division.
 
 For instance if you want to get the random number somewhere between 1 and 33 inclusively then do the following operation
 in order to get it:
 
 311223045145 % 33 = 1
 
-The result will be a random number. In this case it equals to 1.
+The result will be a random number. In this case it equals 1.
 
+### Method 2
+
+Let's suppose that you have two pairs of clocks, is it possible to generate random number even if you don't know 
+the exact date? Yes, it is.
+
+Write down the value that you see on your first clocks:
+
+123456
+
+Write down the value that you see on your second clocks:
+
+123506
+
+Then repeat the same set that consists of two operations N times and perform modulo operation in order to get
+the random number in certain range
 
 # [EOF]
+
 
