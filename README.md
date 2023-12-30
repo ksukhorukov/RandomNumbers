@@ -88,6 +88,8 @@ user@air RandomNumbers $ ./rand
 random number: 33
 
 ````
+<br/>
+<h1><a id="manual_random">Methods Of Manual Random Number Generation</a></h1>
 
 # [EOF]
 
