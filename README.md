@@ -18,8 +18,8 @@ And I want to disclose the nature of random numbers generation today.
 
 - What Is Pseudo-Random Number?
 - What Is Random Number?
-- Generate Random Number Usung Ruby Programming Language
-- Generate Random Number C Programming Language And ANSI99 Standart
+- Generate Random Numbers Usung Ruby Programming Language
+- Generate Random Numbers Using C Programming Language And ANSI99 Standart
 - Methods Of Manual Random Number Generation 
 - Random Numbers Applications
 - Attacks On Random Numbers
@@ -41,7 +41,7 @@ In other words, the pseudo-random number generator - generates a pseudo-random n
 
 It is not trully random number. But it LOOKS like random number.
 
-# Generate Random Number Usung Ruby Programming Language
+# Generation Of Random Numbers Usungs Ruby Programming Language
 
 Source code: 
 
@@ -57,8 +57,39 @@ Example of the results:
 ````
 user@air RandomNumbers $ ./rand.rb    
 82557048399
+````
+
+# Generation Of Random Numbers Using C Programming Language And ANSI99 Standart
 
 ````
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+
+int main() {
+  long seed = (long)time(NULL);
+  
+  srand(seed);
+
+  long random_number = rand();
+
+  printf("random number: %ld\n", random_number);
+
+  return 0;
+}
+````
+
+Let's build and run this example:
+
+````
+user@air RandomNumbers $ make
+gcc rand.c -o rand
+
+user@air RandomNumbers $ ./rand              
+random number: 1726194239
+
+````
+
 # [EOF]
 
 
