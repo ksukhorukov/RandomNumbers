@@ -16,7 +16,7 @@ And I want to disclose the nature of random numbers generation today.
 
 # Content
 
-- What Is Pseudo-Random Number?
+- [What Is Pseudo-Random Number?](#what_is_pseudo_random_number)
 - What Is Random Number?
 - Generate Random Numbers Usung Ruby Programming Language
 - Generate Random Numbers Using C Programming Language And ANSI99 Standart
