@@ -1,0 +1,64 @@
+# Pseudo Random Numbers And True Randomness
+
+Let's start from the beginning. 
+
+There is no such thing as random number in Computer Science. 
+
+A lot of things have been done in order to reach truly randomness.
+
+But still there is no better way to generate random number on the Earth than to 
+generate it in Comos with the help of quantum clocks.
+
+Random numbers or pseudo random numbers is really interesting topic that has a lot of
+practical applications.
+
+And I want to disclose the nature of random numbers generation today.
+
+# Content
+
+- What Is Pseudo-Random Number?
+- What Is Random Number?
+- Generate Random Number Usung Ruby Programming Language
+- Generate Random Number C Programming Language And ANSI99 Standart
+- Methods Of Manual Random Number Generation 
+- Random Numbers Applications
+- Attacks On Random Numbers
+- True Random Numbers
+
+# What Is Pseudo-Random Number?
+
+````
+A pseudorandom number generator is a function that takes a short random seed 
+and outputs a longer bit sequence that “appears random.” To be cryptographically 
+secure, the output of a pseudorandom number generator should be computationally 
+indistinguishable from a random string. In particular, given a short prefix of the sequence, 
+it should be computationally infeasible to predict the rest of the sequence without knowing the seed. 
+````
+
+[Pseudo-Random Number](https://www.sciencedirect.com/topics/mathematics/pseudo-random-number)
+
+In other words, the pseudo-random number generator - generates a pseudo-random numbers.
+
+It is not trully random number. But it LOOKS like random number.
+
+# Generate Random Number Usung Ruby Programming Language
+
+Source code: 
+
+````
+user@air RandomNumbers $ cat ./rand.rb 
+#!/usr/bin/env ruby
+
+puts rand(100_000_000_000)%   
+````
+
+Example of the results:
+
+````
+user@air RandomNumbers $ ./rand.rb    
+82557048399
+
+````
+# [EOF]
+
+
