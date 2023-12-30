@@ -113,6 +113,21 @@ in order to get it:
 
 The result will be a random number. In this case it equals to 1.
 
+### Method 2
+
+Let's suppose that you have two pairs of clocks, is it possible to generate random number even if you don't know 
+the exact date? Yes, it is.
+
+Write down the value that you see on your first clocks:
+
+123456
+
+Write down the value that you see on your second clocks:
+
+123506
+
+Then repeat the same set that consists of two operations N times and perform modulo operation in order to get
+the random number in certain range
 
 # [EOF]
 
