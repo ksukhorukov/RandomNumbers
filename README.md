@@ -58,7 +58,7 @@ user@air RandomNumbers $ ./rand.rb
 82557048399
 ````
 
-<h1><a id="random_с"> # Generation Of Random Numbers Using C Programming Language And ANSI99 Standart </a></h1>
+<h1><a id="random_с"> Generation Of Random Numbers Using C Programming Language And ANSI99 Standart </a></h1>
 
 ````
 #include <stdlib.h>
