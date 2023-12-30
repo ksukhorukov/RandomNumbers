@@ -86,7 +86,7 @@ user@air RandomNumbers $ make
 gcc rand.c -o rand
 user@air RandomNumbers $ ./rand
 
-random number: 30
+random number: 33
 
 ````
 
