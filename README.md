@@ -2,7 +2,7 @@
 
 Let's start from the beginning. 
 
-There is no such thing as random number in Computer Science. 
+There is no such thing as a random number in Computer Science. 
 
 A lot of things have been done in order to reach truly randomness.
 
@@ -17,8 +17,8 @@ And I want to disclose the nature of random numbers generation today.
 # Content
 
  [What Is Pseudo-Random Number?](#what_is_pseudo_random_number)<br/>
- [Generate Random Numbers Usung Ruby Programming Language](#random_ruby)<br/>
- [Generate Random Numbers Using C Programming Language And ANSI99 Standart](#random_c)<br/>
+ [Generate Random Numbers Using Ruby Programming Language](#random_ruby)<br/>
+ [Generate Random Numbers Using C Programming Language And ANSI99 Standard](#random_c)<br/>
  [Methods Of Manual Random Number Generation](#manual_random)<br/>
  Random Numbers Applications<br/>
  Attacks On Random Numbers<br/>
@@ -36,11 +36,11 @@ it should be computationally infeasible to predict the rest of the sequence with
 
 [Pseudo-Random Number](https://www.sciencedirect.com/topics/mathematics/pseudo-random-number)
 
-In other words, the pseudo-random number generator - generates a pseudo-random numbers.
+In other words, the pseudo-random number generator - generates pseudo-random numbers.
 
-It is not trully random number. But it LOOKS like random number.
+It is not truly random number. But it LOOKS like random number.
 
-<h1><a id="random_ruby">Generation Of Random Numbers Usungs Ruby Programming Language</a></h1>
+<h1><a id="random_ruby">Generation Of Random Numbers Using Ruby Programming Language</a></h1>
 
 Source code: 
 
@@ -91,10 +91,9 @@ random number: 33
 <br/>
 <h1><a id="manual_random">Methods Of Manual Random Numbers Generation</a></h1>
 
-There are some situations when you cannot use pre-programmed randomizer but you have to generate random number.
+There are some situations when you cannot use a pre-programmed randomizer but you have to generate a random number.
 
-For instance you don't have access to your computer and have only pen and a piece of paper. 
+For instance you don't have access to your computer and have only a pen and a piece of paper. 
 
 # [EOF]
-
 
