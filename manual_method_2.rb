@@ -4,6 +4,7 @@ class RandomizedClocks
   N = 10
   RANGE = 100
   CLOCKS_DEFAULT_VALUE = '112233'
+  CLOCKS_ZERO_VALUE = '000000'
 
   attr_reader :n, :range
   attr_accessor :clocks
@@ -42,14 +43,14 @@ class RandomizedClocks
     n
   end
 
-  def increment_hours_by(timestamp = '000000', n)
+  def increment_hours_by(timestamp = CLOCKS_ZERO_VALUE, n)
     data = timestamp.split('').map(&:to_i)
     increment = ((data[0, 2].join.to_i + n) % 60).to_s
     slice = data[2,4].join('')
     @clocks = padding(increment) + slice
   end 
 
-  def increment_minutes_by(timestamp = '000000', n)
+  def increment_minutes_by(timestamp = CLOCKS_ZERO_VALUE, n)
     data = timestamp.split('').map(&:to_i)
     increment = ((data[2, 2].join.to_i + n) % 60).to_s
     slice_1 = data[0,2].join('')
@@ -57,7 +58,7 @@ class RandomizedClocks
     @clocks = slice_1 + padding(increment) + slice_2
   end 
 
-  def increment_seconds_by(timestamp = '000000', n)
+  def increment_seconds_by(timestamp = CLOCKS_ZERO_VALUE, n)
     data = timestamp.split('').map(&:to_i)
     increment = ((data[4, 2].join.to_i + n) % 60).to_s
     slice = data[0,4].join('')
