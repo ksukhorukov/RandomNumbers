@@ -3,13 +3,13 @@
 #include <time.h>
 
 int main() {
-  long seed = (long)time(NULL);
+  int seed = (int)time(NULL);
   
   srand(seed);
 
-  long random_number = rand();
+  int random_number = rand() % 1000;
 
-  printf("\nrandom number: %ld\n\n", random_number);
+  printf("\nrandom number: %d\n\n", random_number);
 
   return 0;
 }

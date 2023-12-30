@@ -67,13 +67,13 @@ user@air RandomNumbers $ ./rand.rb
 #include <time.h>
 
 int main() {
-  long seed = (long)time(NULL);
+  int seed = (int)time(NULL);
   
   srand(seed);
 
-  long random_number = rand();
+  int random_number = rand() % 1000;
 
-  printf("\nrandom number: %ld\n\n", random_number);
+  printf("\nrandom number: %d\n\n", random_number);
 
   return 0;
 }
@@ -82,11 +82,11 @@ int main() {
 Let's build and run this example:
 
 ````
-user@air RandomNumbers $ make 
+user@air RandomNumbers $ make
 gcc rand.c -o rand
 user@air RandomNumbers $ ./rand
 
-random number: 1736648193
+random number: 30
 
 ````
 
