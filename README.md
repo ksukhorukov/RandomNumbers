@@ -234,6 +234,12 @@ random number: 28
 
 It looks like everything is working well.
 
+### Method 3
+
+There is a pure mathematical formula for pseudo-random numbers generation.
+
+Let's take a look at this formula:
+
 # [EOF]
 
 
