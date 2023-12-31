@@ -242,9 +242,7 @@ Let's take a look at this formula:
 
 # Litrature
 
-<ul>
- <li>[Concrete Math. Chapter 3](https://www.math.arizona.edu/~tgk/mc/book_chap3.pdf)</li>
-</ul>
+- [Concrete Math. Chapter 3](https://www.math.arizona.edu/~tgk/mc/book_chap3.pdf)
   
 # [EOF]
 
