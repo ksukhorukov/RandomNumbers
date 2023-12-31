@@ -127,7 +127,112 @@ Write down the value that you see on your second clocks:
 123506
 
 Then repeat the same set that consists of two operations N times and perform modulo operation in order to get
-the random number in certain range
+the random number in certain range.
+
+Implementation example using Ruby programming language:
+
+````
+#!/usr/bin/env ruby
+
+class RandomizedClocks 
+  N = 10
+  RANGE = 100
+  CLOCKS_DEFAULT_VALUE = '112233'
+  CLOCKS_ZERO_VALUE = '000000'
+
+  attr_reader :n, :range
+  attr_accessor :clocks
+
+  def initialize(clocks = CLOCKS_DEFAULT_VALUE, n = N, range = RANGE)
+    @clocks = clocks 
+    @range = range 
+    @n = n
+
+    perform
+  end 
+
+  def perform
+    for i in 0...N do
+      increment_hours_by(clocks, rand(60))
+      increment_minutes_by(clocks, rand(60))
+      increment_seconds_by(clocks, rand(60))      
+    end 
+
+    puts "random number: #{random_number}"
+  end 
+
+  private 
+
+  def random_number
+    clocks.to_i % range
+  end
+
+  def padding(n)
+    n = n.to_s.split('')
+    size = n.size
+    n = n.join('')
+
+    return '0' + n if size < 2 
+
+    n
+  end
+
+  def increment_hours_by(timestamp = CLOCKS_ZERO_VALUE, n)
+    data = timestamp.split('').map(&:to_i)
+    increment = ((data[0, 2].join.to_i + n) % 60).to_s
+    slice = data[2,4].join('')
+    @clocks = padding(increment) + slice
+  end 
+
+  def increment_minutes_by(timestamp = CLOCKS_ZERO_VALUE, n)
+    data = timestamp.split('').map(&:to_i)
+    increment = ((data[2, 2].join.to_i + n) % 60).to_s
+    slice_1 = data[0,2].join('')
+    slice_2 = data[4,2].join('')
+    @clocks = slice_1 + padding(increment) + slice_2
+  end 
+
+  def increment_seconds_by(timestamp = CLOCKS_ZERO_VALUE, n)
+    data = timestamp.split('').map(&:to_i)
+    increment = ((data[4, 2].join.to_i + n) % 60).to_s
+    slice = data[0,4].join('')
+    @clocks = padding(increment) + slice
+  end 
+end 
+
+RandomizedClocks.new
+````
+
+Let's run it!
+
+```
+user@air RandomNumbers $ ./manual_method_2.rb         
+random number: 3
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 24
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 37
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 17
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 29
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 18
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 32
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 51
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 25
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 25
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 5
+user@air RandomNumbers $ ./manual_method_2.rb
+random number: 28
+```
+
+It looks like everything is working well.
 
 # [EOF]
 
