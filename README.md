@@ -240,9 +240,10 @@ There is a pure mathematical formula for pseudo-random numbers generation.
 
 Let's take a look at this formula:
 
-# Litrature
+# Literature
 
-- [Concrete Math. Chapter 3](https://www.math.arizona.edu/~tgk/mc/book_chap3.pdf)
+- [Concrete Mathematics: A Foundation for Computer Science (2nd Edition) 2nd Edition
+by Ronald Graham, Donald Knuth, Oren Patashnik. Published at February 28, 1994](https://www.math.arizona.edu/~tgk/mc/book_chap3.pdf)
   
 # [EOF]
 
