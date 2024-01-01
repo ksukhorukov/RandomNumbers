@@ -20,6 +20,7 @@ And I want to disclose the nature of random numbers generation today.
  [Generate Random Numbers Using Ruby Programming Language](#random_ruby)<br/>
  [Generate Random Numbers Using C Programming Language And ANSI99 Standard](#random_с_ansi99)<br/>
  [Methods Of Manual Random Number Generation](#manual_random)<br/>
+ [Literature](#literature)<br/>
 
 <h1><a id="what_is_pseudo_random_number">What Is Pseudo-Random Number?</a></h1>
 
@@ -235,7 +236,7 @@ It looks like everything is working well.
 
 - [There is a pure mathematical formulas for pseudo random numbers generation](https://www.math.arizona.edu/~tgk/mc/book_chap3.pdf)
 
-# Literature
+<h1><a href id="literature">Literature</a></h1>
 
 - [Concrete Mathematics: A Foundation for Computer Science (2nd Edition) by Ronald Graham, Donald Knuth, Oren Patashnik. Published at February 28, 1994](https://www.math.arizona.edu/~tgk/mc/book_chap3.pdf)
   
