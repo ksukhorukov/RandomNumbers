@@ -111,7 +111,7 @@ in order to get it:
 
 The result will be a random number. In this case it equals 1.
 
-### Method 2
+<h3><a href id="method_2">Method 2</a></h3>
 
 Let's suppose that you have two pairs of clocks, is it possible to generate random number even if you don't know 
 the exact date? Yes, it is.
