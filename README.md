@@ -21,9 +21,9 @@ And I want to disclose the nature of random numbers generation today.
  [Generate Random Numbers Using C Programming Language And ANSI99 Standard](#random_с_ansi99)<br/>
  [Methods Of Manual Random Number Generation](#manual_random)<br/>
    <ul>
-     <li>[Method 1](#method_1)</li>
-     <li>[Method 2](#method_2)</li>
-     <li>[Method 3](#method_3)</li>
+     <li><a href="#method_1">Method 1</a></li>
+     <li><a href="#method_2">Method 2</a></li>
+     <li><a href="#method_3">Method 3</a></li>
    </ul>
  [Literature](#literature)<br/>
 
