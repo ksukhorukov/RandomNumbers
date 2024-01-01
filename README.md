@@ -232,7 +232,7 @@ random number: 28
 
 It looks like everything is working well.
 
-### Method 3
+<h3><a href id="method_3">Method 3</a></h3>
 
 - [There is a pure mathematical formulas for pseudo random numbers generation](https://www.math.arizona.edu/~tgk/mc/book_chap3.pdf)
 
