@@ -20,6 +20,11 @@ And I want to disclose the nature of random numbers generation today.
  [Generate Random Numbers Using Ruby Programming Language](#random_ruby)<br/>
  [Generate Random Numbers Using C Programming Language And ANSI99 Standard](#random_с_ansi99)<br/>
  [Methods Of Manual Random Number Generation](#manual_random)<br/>
+   <ul>
+     <li>[Method 1](#method_1)</li>
+     <li>[Method 2](#method_2)</li>
+     <li>[Method 3](#method_3)</li>
+   </ul>
  [Literature](#literature)<br/>
 
 <h1><a id="what_is_pseudo_random_number">What Is Pseudo-Random Number?</a></h1>
