@@ -93,7 +93,7 @@ There are some situations when you cannot use a pre-programmed randomizer but yo
 
 For instance you don't have access to your computer and have only a pen and a piece of paper. 
 
-### Method 1
+<h3><a href id="method_1">Method 1</a></h3>
 
 If you know the current date then write it down on paper, e.g. 31.12.23 
 If you have clocks then write down the exact value that you see on the clocks, e.g. 04:51:45
