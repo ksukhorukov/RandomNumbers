@@ -18,7 +18,7 @@ And I want to disclose the nature of random numbers generation today.
 
  [What Is Pseudo-Random Number?](#what_is_pseudo_random_number)<br/>
  [Generate Random Numbers Using Ruby Programming Language](#random_ruby)<br/>
- [Generate Random Numbers Using C Programming Language And ANSI99 Standard](#random_c)<br/>
+ [Generate Random Numbers Using C Programming Language And ANSI99 Standard](#random_с_ansi99)<br/>
  [Methods Of Manual Random Number Generation](#manual_random)<br/>
 
 <h1><a id="what_is_pseudo_random_number">What Is Pseudo-Random Number?</a></h1>
@@ -55,7 +55,7 @@ user@air RandomNumbers $ ./rand.rb
 82557048399
 ````
 
-<h1><a id="random_с">Generation Of Random Numbers Using C Programming Language And ANSI99 Standart</a></h1>
+<h1><a id="random_с_ansi99">Generation Of Random Numbers Using C Programming Language And ANSI99 Standart</a></h1>
 
 ````
 #include <stdlib.h>
