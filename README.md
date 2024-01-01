@@ -16,16 +16,16 @@ And I want to disclose the nature of random numbers generation today.
 
 # Content
 
- [What Is Pseudo-Random Number?](#what_is_pseudo_random_number)<br/>
- [Generate Random Numbers Using Ruby Programming Language](#random_ruby)<br/>
- [Generate Random Numbers Using C Programming Language And ANSI99 Standard](#random_с_ansi99)<br/>
- [Methods Of Manual Random Number Generation](#manual_random)<br/>
+- [What Is Pseudo-Random Number?](#what_is_pseudo_random_number)<br/>
+- [Generate Random Numbers Using Ruby Programming Language](#random_ruby)<br/>
+- [Generate Random Numbers Using C Programming Language And ANSI99 Standard](#random_с_ansi99)<br/>
+- [Methods Of Manual Random Number Generation](#manual_random)<br/>
    <ul>
      <li><a href="#method_1">Method 1</a></li>
      <li><a href="#method_2">Method 2</a></li>
      <li><a href="#method_3">Method 3</a></li>
    </ul>
- [Literature](#literature)<br/>
+- [Literature](#literature)<br/>
 
 <h1><a id="what_is_pseudo_random_number">What Is Pseudo-Random Number?</a></h1>
 
